@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700&subset=latin-ext');
+
+$primary: #0cebeb;
+$secondary: #29ffc6;
+$dark: #211e1c;
+$light: #ededed;
+$gray: #868e96;
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding-top: 30px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+.whitespace {
+	margin-bottom: 80px;
+}
+
+.logotype {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: $dark;
+	font-size: 22px;
+}
+
+.gradient-bg {
+	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
+	min-height: 600px;
+	h1 {
+		color: #fff;
+		margin-top: 20px;
+	}
+	p {
+		color: #fff;
+		font-weight: 400;
+	}
+	.small-jumbotron {
+		color: #fff;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin-top: 60px;
+	}
+}
+
+.social {
+	color: #fff;
+	font-size: 36px;
+	margin-right: 20px;
+	transition: .5s;
+	&:hover {
+		color: $light;
+	}
+}
+
+h1.title {
+	margin-bottom: 20px;
+}
+
+img.about-photo {
+	width: 100%;
+	height: auto;
+	border: 2px $primary solid;
+}
+
+.small-em {
+	text-transform: uppercase;
+	color: $gray;
+	margin-bottom: 20px;
+}
+
+.dashed-about {
+	border-left: 3px dashed $primary;
+	padding: 0 20px;
+	margin-top: 20px;
+	h4 {
+		font-size: 18px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: $primary;
+			margin-left: -30px;
+			margin-top: 2px;
+		}
+	}
+	p {
+		font-size: 14px;
+	}
+}
+
+.skills {
+	width: 100%;
+}
+
+.progress-skills {
+	margin-bottom: 10px;
+	background-color: $light;
+}
+
+.progress-bar {
+	text-align: left;
+	white-space: nowrap;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
+	.progress-type {
+	padding-left: 10px;
+	}
+}
+
+.works {
+	width: 100%;
+	background-color: $light;
+	padding: 60px 0;
+}
+
+
+body.modal-open #wrap{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+  
+.modal-backdrop {background: #f7f7f7;}
+
+.close {
+    font-size: 50px;
+    display: block;
+}

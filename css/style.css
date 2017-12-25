@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700&subset=latin-ext");
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 30px; }
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; }
+
+.whitespace {
+  margin-bottom: 80px; }
+
+.logotype {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #211e1c;
+  font-size: 22px; }
+
+.gradient-bg {
+  background-image: linear-gradient(120deg, #0cebeb 0%, #29ffc6 100%);
+  min-height: 600px; }
+  .gradient-bg h1 {
+    color: #fff;
+    margin-top: 20px; }
+  .gradient-bg p {
+    color: #fff;
+    font-weight: 400; }
+  .gradient-bg .small-jumbotron {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 60px; }
+
+.social {
+  color: #fff;
+  font-size: 36px;
+  margin-right: 20px;
+  transition: .5s; }
+  .social:hover {
+    color: #ededed; }
+
+h1.title {
+  margin-bottom: 20px; }
+
+img.about-photo {
+  width: 100%;
+  height: auto;
+  border: 2px #0cebeb solid; }
+
+.small-em {
+  text-transform: uppercase;
+  color: #868e96;
+  margin-bottom: 20px; }
+
+.dashed-about {
+  border-left: 3px dashed #0cebeb;
+  padding: 0 20px;
+  margin-top: 20px; }
+  .dashed-about h4 {
+    font-size: 18px;
+    position: relative; }
+    .dashed-about h4::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #0cebeb;
+      margin-left: -30px;
+      margin-top: 2px; }
+  .dashed-about p {
+    font-size: 14px; }
+
+.skills {
+  width: 100%; }
+
+.progress-skills {
+  margin-bottom: 10px;
+  background-color: #ededed; }
+
+.progress-bar {
+  text-align: left;
+  white-space: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  background-image: linear-gradient(120deg, #0cebeb 0%, #29ffc6 100%); }
+  .progress-bar .progress-type {
+    padding-left: 10px; }
+
+.works {
+  width: 100%;
+  background-color: #ededed;
+  padding: 60px 0; }
+
+body.modal-open #wrap {
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px); }
+
+.modal-backdrop {
+  background: #f7f7f7; }
+
+.close {
+  font-size: 50px;
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */
