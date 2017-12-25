@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700&subset=latin-ext");
 body {
   font-family: 'Roboto', sans-serif;
-  padding-top: 30px; }
+  margin-top: 50px;
+  position: relative; }
 
 h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
@@ -56,7 +57,7 @@ img.about-photo {
 .dashed-about {
   border-left: 3px dashed #0cebeb;
   padding: 0 20px;
-  margin-top: 20px; }
+  margin: 20px 0 40px; }
   .dashed-about h4 {
     font-size: 18px;
     position: relative; }
@@ -70,13 +71,17 @@ img.about-photo {
       margin-left: -30px;
       margin-top: 2px; }
   .dashed-about p {
-    font-size: 14px; }
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .dashed-about .position {
+    color: #0cebeb;
+    margin-bottom: 10px; }
 
-.skills {
-  width: 100%; }
+.skills h4 {
+  margin-bottom: 20px; }
 
 .progress-skills {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: #ededed; }
 
 .progress-bar {
@@ -90,10 +95,24 @@ img.about-photo {
   .progress-bar .progress-type {
     padding-left: 10px; }
 
+h4.secondary-skills {
+  margin-top: 20px; }
+
+.prog-label {
+  margin-bottom: 0; }
+
 .works {
   width: 100%;
   background-color: #ededed;
   padding: 60px 0; }
+  .works p {
+    margin-bottom: 40px; }
+
+.badge-cyan {
+  background-color: #0cebeb; }
+
+.badge-turq {
+  background-color: #29ffc6; }
 
 body.modal-open #wrap {
   -webkit-filter: blur(7px);
@@ -108,5 +127,18 @@ body.modal-open #wrap {
 .close {
   font-size: 50px;
   display: block; }
+
+.contact {
+  text-align: center; }
+  .contact .mail {
+    padding-left: 15px; }
+
+.text-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(120deg, #0cebeb 0%, #29ffc6 100%); }
+
+.footer {
+  background-color: #ededed; }
 
 /*# sourceMappingURL=style.prefixed.css.map */
