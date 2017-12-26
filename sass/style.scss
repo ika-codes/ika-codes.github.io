@@ -163,10 +163,6 @@ img.hobby {
 	}
 }
 
-h4.secondary-skills {
-	margin-top: 66px;
-}
-
 .to-learn {
 	margin-top: 30px;
 	display: flex;
@@ -208,10 +204,6 @@ h4.secondary-skills {
 	background-color: $primary;
 }
 
-.badge-turq {
-	background-color: $secondary;
-}
-
 .arrow-left {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230cebeb' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
@@ -221,18 +213,14 @@ h4.secondary-skills {
 }
 
 body.modal-open #wrap{
-    -webkit-filter: blur(7px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
+	filter: blur(15px);
 }
-  
+
 .modal-backdrop {background: #f7f7f7;}
 
 .close {
-    font-size: 50px;
-    display: block;
+	font-size: 50px;
+	display: block;
 }
 
 .contact {
