@@ -45,14 +45,27 @@ h1.title {
   margin-bottom: 20px; }
 
 img.about-photo {
-  width: 100%;
+  width: 80%;
   height: auto;
   border: 2px #0cebeb solid; }
 
 .small-em {
   text-transform: uppercase;
-  color: #868e96;
-  margin-bottom: 20px; }
+  color: #0cebeb;
+  margin: 30px 0; }
+
+.hobbies {
+  text-transform: uppercase;
+  padding: 16px 0 30px;
+  font-size: 14px;
+  color: #868e96; }
+
+img.hobby {
+  height: 60px;
+  transition: .5s; }
+  img.hobby:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .dashed-about {
   border-left: 3px dashed #0cebeb;
@@ -96,7 +109,25 @@ img.about-photo {
     padding-left: 10px; }
 
 h4.secondary-skills {
-  margin-top: 20px; }
+  margin-top: 66px; }
+
+.to-learn {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.learning {
+  display: inline-block;
+  margin-left: 30px; }
+  .learning i {
+    color: #0cebeb;
+    padding-right: 8px; }
 
 .prog-label {
   margin-bottom: 0; }
