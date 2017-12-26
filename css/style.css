@@ -14,6 +14,14 @@ h1, h2, h3, h4 {
 .h-space {
   margin-bottom: 40px; }
 
+.a-link {
+  color: #0cebeb;
+  font-weight: 700;
+  text-decoration: none; }
+  .a-link:hover {
+    color: #29ffc6;
+    text-decoration: none; }
+
 .logotype {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -40,9 +48,13 @@ h1, h2, h3, h4 {
   color: #fff;
   font-size: 36px;
   margin-right: 20px;
-  transition: .5s; }
+  transition: 1s; }
   .social:hover {
-    color: #ededed; }
+    color: #000; }
+
+.jumbo-img img {
+  width: 100%;
+  margin-top: 20px; }
 
 h1.title {
   margin-bottom: 20px; }
@@ -181,5 +193,9 @@ body.modal-open #wrap {
 
 .footer {
   background-color: #ededed; }
+
+@media (max-width: 990px) {
+  .jumbo-img {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

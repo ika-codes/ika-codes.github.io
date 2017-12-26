@@ -25,6 +25,16 @@ h1, h2, h3, h4 {
 	margin-bottom: 40px;
 }
 
+.a-link {
+	color: $primary;
+	font-weight: 700;
+	text-decoration: none;
+	&:hover {
+		color: $secondary;
+		text-decoration: none;
+	}
+}
+
 .logotype {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
@@ -56,9 +66,16 @@ h1, h2, h3, h4 {
 	color: #fff;
 	font-size: 36px;
 	margin-right: 20px;
-	transition: .5s;
+	transition: 1s;
 	&:hover {
-		color: $light;
+		color: #000;
+	}
+}
+
+.jumbo-img {
+	img {
+		width: 100%;
+		margin-top: 20px;
 	}
 }
 
@@ -233,4 +250,10 @@ body.modal-open #wrap{
 
 .footer {
 	background-color: $light;
+}
+
+@media(max-width:990px) {
+	.jumbo-img {
+		display: none;
+	}
 }
