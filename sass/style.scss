@@ -2,6 +2,7 @@
 
 $primary: #0cebeb;
 $secondary: #29ffc6;
+$between: #1bf6d7;
 $dark: #211e1c;
 $light: #ededed;
 $gray: #868e96;
@@ -29,7 +30,7 @@ h4 {
 }
 
 .a-link {
-	color: $primary;
+	color: $between;
 	font-weight: 700;
 	text-decoration: none;
 	&:hover {
@@ -47,7 +48,7 @@ h4 {
 
 .gradient-bg {
 	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
-	min-height: 100vh;
+	min-height: 600px;
 
 	h1 {
 		color: #fff;
@@ -90,7 +91,7 @@ h1.title {
 img.about-photo {
 	width: 80%;
 	height: auto;
-	border: 2px $primary solid;
+	border: 2px $between solid;
 }
 
 .small-em {
@@ -115,7 +116,7 @@ img.hobby {
 }
 
 .dashed-about {
-	border-left: 3px dashed $primary;
+	border-left: 3px dashed $between;
 	padding: 0 20px;
 	margin: 20px 0 40px;
 	h4 {
@@ -127,7 +128,12 @@ img.hobby {
 			width: 16px;
 			height: 16px;
 			border-radius: 50%;
-			background-color: $primary;
+			//background-color: $primary;
+			background-image: linear-gradient(
+				120deg,
+				$primary 0%,
+				$secondary 100%
+			);
 			margin-left: -30px;
 			margin-top: 2px;
 		}
@@ -137,7 +143,7 @@ img.hobby {
 		margin-bottom: 20px;
 	}
 	.position {
-		color: $primary;
+		color: $between;
 		margin-bottom: 10px;
 	}
 }
@@ -239,7 +245,8 @@ img.hobby {
 }
 
 .badge-cyan {
-	background-color: $primary;
+	//background-color: $primary;
+	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
 }
 
 .arrow-left {
@@ -266,7 +273,7 @@ body.modal-open #wrap {
 .contact {
 	text-align: center;
 	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
-	min-height: 50vh;
+	min-height: 350px;
 	padding: 80px 0;
 
 	.mail {
