@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700&subset=latin-ext");
 
 $primary: #0cebeb;
 $secondary: #29ffc6;
@@ -7,13 +7,16 @@ $light: #ededed;
 $gray: #868e96;
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin-top: 50px;
 	position: relative;
 }
 
-h1, h2, h3, h4 {
-	font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Oswald", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -36,7 +39,7 @@ h1, h2, h3, h4 {
 }
 
 .logotype {
-	font-family: 'Oswald', sans-serif;
+	font-family: "Oswald", sans-serif;
 	text-transform: uppercase;
 	color: $dark;
 	font-size: 22px;
@@ -44,7 +47,8 @@ h1, h2, h3, h4 {
 
 .gradient-bg {
 	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
-	min-height: 600px;
+	min-height: 100vh;
+
 	h1 {
 		color: #fff;
 		margin-top: 20px;
@@ -87,7 +91,6 @@ img.about-photo {
 	width: 80%;
 	height: auto;
 	border: 2px $primary solid;
-	align: center;
 }
 
 .small-em {
@@ -105,7 +108,7 @@ img.about-photo {
 
 img.hobby {
 	height: 60px;
-	transition: .5s;
+	transition: 0.5s;
 	&:hover {
 		transform: scale(1.1);
 	}
@@ -119,7 +122,7 @@ img.hobby {
 		font-size: 18px;
 		position: relative;
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			width: 16px;
 			height: 16px;
@@ -159,7 +162,7 @@ img.hobby {
 	cursor: pointer;
 	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
 	.progress-type {
-	padding-left: 10px;
+		padding-left: 10px;
 	}
 }
 
@@ -186,17 +189,28 @@ img.hobby {
 .works {
 	width: 100%;
 	background-color: $light;
-	padding: 60px 0;
+	padding: 80px 0;
+
 	p {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 }
 
 .card-zoom {
-	transition: .3s;
+	transition: 0.3s;
 	&:hover {
 		transform: scale(1.03);
-		box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.50);
+		box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.card-body {
+	min-height: 180px;
+	display: flex;
+	flex-direction: column;
+
+	p {
+		flex: 1;
 	}
 }
 
@@ -212,11 +226,13 @@ img.hobby {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230cebeb' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-body.modal-open #wrap{
+body.modal-open #wrap {
 	filter: blur(15px);
 }
 
-.modal-backdrop {background: #f7f7f7;}
+.modal-backdrop {
+	background: #f7f7f7;
+}
 
 .close {
 	font-size: 50px;
@@ -225,22 +241,20 @@ body.modal-open #wrap{
 
 .contact {
 	text-align: center;
+	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
+	min-height: 50vh;
+	padding: 80px 0;
+
 	.mail {
 		padding-left: 15px;
 	}
-}
-
-.text-gradient {
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-image: linear-gradient(120deg, $primary 0%, $secondary 100%);
 }
 
 .footer {
 	background-color: $light;
 }
 
-@media(max-width:990px) {
+@media (max-width: 990px) {
 	.jumbo-img {
 		display: none;
 	}
